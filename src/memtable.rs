@@ -632,8 +632,8 @@ mod tests {
     #[test]
     fn single_memtable_matches_a_btreemap_model() {
         let mt = Memtable::new(8 << 20, 1).unwrap();
-        let mut model: BTreeMap<(Vec<u8>, std::cmp::Reverse<u64>), Option<Vec<u8>>> =
-            BTreeMap::new();
+        type Model = BTreeMap<(Vec<u8>, std::cmp::Reverse<u64>), Option<Vec<u8>>>;
+        let mut model: Model = BTreeMap::new();
         let mut x: u64 = 0xDEAD_BEEF_CAFE_1234;
         let mut rng = || {
             x ^= x << 13;
@@ -1380,7 +1380,7 @@ mod edge_cases {
             let key = format!("k{:03}", r() % 64).into_bytes();
             // seqs jitter around i so neighbours land out of order across rotations
             let seq = i.saturating_sub(r() % 16);
-            if r() % 5 == 0 {
+            if r().is_multiple_of(5) {
                 del(&set, seq, &key);
                 model.entry(key).or_default().insert(seq, None);
             } else {
