@@ -1,4 +1,4 @@
-# memtable
+# rmemtbl
 
 The in-memory write buffer of an LSM storage engine, built on [rskipl](https://github.com/karmann-dm/rskipl), a lock-free, arena-backed MVCC skiplist.
 
