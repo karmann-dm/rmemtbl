@@ -2,6 +2,12 @@
 name = "rmemtbl"
 version = "0.1.0"
 edition = "2024"
+description = "The in-memory write buffer of an LSM storage engine, built on rskipl, a lock-free, arena-backed MVCC skiplist."
+repository = "https://github.com/karmann-dm/rmemtbl"
+license = "MIT OR Apache-2.0"
+readme = "README.MD"
+keywords = ["memtable", "sstable", "lock-free", "mvcc"", "arena"]
+categories = ["data-structures", "concurrency", "database-implementations"]
 
 [dependencies]
 rskipl = "0.1.3"
