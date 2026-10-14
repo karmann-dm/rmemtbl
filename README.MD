@@ -1,7 +1,7 @@
 # rmemtbl
 
 [![CI](https://github.com/karmann-dm/rmemtbl/actions/workflows/build-pr.yaml/badge.svg)](https://github.com/karmann-dm/rmemtbl/actions/workflows/build-pr.yaml)
-[![crates.io](https://img.shields.io/crates/v/rmemtbl.svg)](https://crates.io/crates/rmemtbl)
+[![crates.io](https://img.shields.io/crates/v/rmemtbl.svg)](https://crates.io/crates/rmemtbl) 
 [![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](#license)
 
 The in-memory write buffer of an LSM storage engine, built on [rskipl](https://github.com/karmann-dm/rskipl), a lock-free, arena-backed MVCC skiplist.
