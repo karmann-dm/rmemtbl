@@ -1,6 +1,6 @@
 [package]
 name = "rmemtbl"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "The in-memory write buffer of an LSM storage engine, built on rskipl, a lock-free, arena-backed MVCC skiplist."
 repository = "https://github.com/karmann-dm/rmemtbl"
