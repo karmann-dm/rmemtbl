@@ -6,7 +6,7 @@ description = "The in-memory write buffer of an LSM storage engine, built on rsk
 repository = "https://github.com/karmann-dm/rmemtbl"
 license = "MIT OR Apache-2.0"
 readme = "README.MD"
-keywords = ["memtable", "sstable", "lock-free", "mvcc"", "arena"]
+keywords = ["memtable", "sstable", "lock-free", "mvcc", "arena"]
 categories = ["data-structures", "concurrency", "database-implementations"]
 
 [dependencies]
